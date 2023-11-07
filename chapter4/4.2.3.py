@@ -3,13 +3,20 @@ from wordcloud import WordCloud
 from PIL import Image
 import matplotlib.pyplot as plt
 import numpy as np
+import stopwordslist0
+
+# 调用函数并传入参数
+stopwordslist0.filter_text_by_flag_and_save('./电商客服对话日志.txt', './stopwords22.txt')
+
+#添加自定义的词
+jieba.add_word('iPhone13')
 
 # 读取数据源文件
-with open('./电商客服对话日志.txt', 'r', encoding='utf8', errors='ignores') as f:
+with open('./电商客服对话日志.txt', 'r', encoding='utf8', errors='ignore') as f:
     txt = f.read()
 
 # 读取停用词文件
-with open('./stopword.txt', 'r', encoding='utf8', errors='ignores') as f:
+with open('./stopwords22.txt', 'r', encoding='utf8', errors='ignore') as f:
 
     # 读取停用词到一个列表中
     stopwordlist = f.readlines()
@@ -20,9 +27,6 @@ with open('./stopword.txt', 'r', encoding='utf8', errors='ignores') as f:
 
     # 将列表对象转为集合对象
     stopword_set = set(stopwordlist)
-
-#添加自定义的词
-jieba.add_word('iPhone 13')
 
 # 分词处理
 words = jieba.cut(txt)  #精确模式

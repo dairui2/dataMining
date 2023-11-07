@@ -1,53 +1,31 @@
-# ! python3
-# -*- coding: utf-8 -*-
-# author : yunchao.zhang
-import jieba
-from collections import Counter
+import jieba.posseg as pseg
 
+# 读取原始文本
+with open('./电商客服对话日志.txt', 'r', encoding='utf-8') as file:
+    text = file.read()
 
-# 创建停用词list
-def stopwordslist(filepath):
-    stopwords = [line.strip() for line in open(filepath, 'r', encoding='utf-8').readlines()]
-    return stopwords
+# 需要排除的特定词性
+excluded_flag = ['m', 'c', 'q', 'u', 'ud', 'ug', 'uj', 'r', 't', 'd','p','w','x','ul']   ##数量词,连词,量词,助词,代词,时间,副词,介词,标点符号,标点符号,时态助词
 
+# 分词处理并筛选词性
+words = pseg.cut(text)
+filtered_words = [word for word, flag in words if flag  in  excluded_flag]
 
-# 对句子进行分词
-def seg_sentence(sentence):
-    """
-    need txt
-    :param sentence:
-    :return:
-    """
-    jieba.load_userdict('./电商客服对话日志.txt')
-    sentence_seged = jieba.cut(sentence.strip())
-    stopwords = stopwordslist('./stopword.txt')  # 这里加载停用词的路径
-    outstr = []
-    for word in sentence_seged:
-        if word not in stopwords:
-            if word != '\t':
-                outstr.append(word)
-    return outstr
+# 将筛选后的词汇加入停用词文件
+with open('./stopwords22.txt', 'a+', encoding='utf-8') as f:
+    for word in filtered_words:
+        f.write(word + '\n')
 
+# 读取原始文本
+with open('./stopwords22.txt', 'r', encoding='utf-8') as file:
+    lines = file.readlines()
 
-# 对分词进行词频展示
-def word_frequency(line_seg):
-    """
-    need ['add','add']
-    :param line_seg:
-    :return:
-    """
-    c = Counter()
-    for x in line_seg:
-        if len(x) > 1 and x != '\r\n':
-            c[x] += 1
-    for (k, v) in c.most_common():
-        print('%s%s  %d' % (' ' * (5 - len(k)), k, v))
+# 去重
+# lines = list(set(lines))
+# 去重并排序
+lines = sorted(set(lines))
 
-
-inputs = open('./电商客服对话日志.txt', 'r', encoding='utf-8')
-lines = ""
-for line in inputs:
-    lines += line.replace("\n", "")
-inputs.close()
-line_seg = seg_sentence(lines)  # 这里的返回值是列表
-word_frequency(line_seg)  # 取词频
+# 保存到新文件
+with open('./stopwords22.txt', 'w', encoding='utf-8') as file:
+    for line in lines:
+        file.write(line)
