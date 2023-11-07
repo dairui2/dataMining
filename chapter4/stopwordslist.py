@@ -18,9 +18,9 @@ def seg_sentence(sentence):
     :param sentence:
     :return:
     """
-    jieba.load_userdict('/Users/dai/Downloads/玩转Python网络爬虫作者.txt')
+    jieba.load_userdict('./电商客服对话日志.txt')
     sentence_seged = jieba.cut(sentence.strip())
-    stopwords = stopwordslist('/Users/dai/Downloads/stopword.txt')  # 这里加载停用词的路径
+    stopwords = stopwordslist('./stopword.txt')  # 这里加载停用词的路径
     outstr = []
     for word in sentence_seged:
         if word not in stopwords:
@@ -44,7 +44,7 @@ def word_frequency(line_seg):
         print('%s%s  %d' % (' ' * (5 - len(k)), k, v))
 
 
-inputs = open('/Users/dai/Downloads/玩转Python网络爬虫作者.txt', 'r', encoding='utf-8')
+inputs = open('./电商客服对话日志.txt', 'r', encoding='utf-8')
 lines = ""
 for line in inputs:
     lines += line.replace("\n", "")

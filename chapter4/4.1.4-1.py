@@ -1,6 +1,6 @@
 import  jieba
 
-with open('/Users/dai/Downloads/玩转Python网络爬虫作者.txt', 'r', encoding='utf8', errors='ignores') as f:
+with open('./电商客服对话日志.txt', 'r', encoding='utf8', errors='ignores') as f:
     txt = f.read()
 # print(txt)
 words = jieba.cut(txt) #精确模式

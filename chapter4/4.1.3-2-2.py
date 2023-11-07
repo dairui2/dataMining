@@ -1,7 +1,7 @@
 import jieba
 import jieba.posseg as pseg
 # words = pseg.cut("我爱北京天安门") #jieba默认模式
-jieba.enable_paddle() #启动paddle模式。 0.40版之后开始支持，早期版本不支持
+#  jieba.enable_paddle() #启动paddle模式。 0.40版之后开始支持，早期版本不支持
 
 # words = pseg.cut("科学家在中国科学技术大学不忘初心研究量子纠缠",use_paddle=True) #paddle模式
 # for word, flag in words:
@@ -23,3 +23,4 @@ for str, flag in strs:
     # seg_list = pseg.cut(str,use_paddle=True) # 使用paddle模式
     # print("Paddle Mode: " + '|'.join(list(seg_list)))
     print('%s %s' % (str, flag))
+

@@ -1,12 +1,15 @@
 import  jieba
 
-with open('/Users/dai/Downloads/玩转Python网络爬虫作者.txt', 'r', encoding='utf8', errors='ignores') as f:
+with open('./电商客服对话日志.txt', 'r', encoding='utf8', errors='ignores') as f:
     txt = f.read()
 
-with open('/Users/dai/Downloads/stopword.txt', 'r', encoding='utf8', errors='ignores') as f:
+with open('./stopword.txt', 'r', encoding='utf8', errors='ignores') as f:
     stopwordlist = f.readlines()    #读取停用词到一个列表中
     maped = map(lambda  x: str(x).strip(), stopwordlist)    #删除停用词的前后空白，map是映射函数，对列表中的每一行元素都进行处理(删除前后空白).
     stopwordlist = list(maped)
+
+#添加自定义的词
+jieba.add_word('iPhone 13')
 
 words = jieba.cut(txt) #精确模式
 

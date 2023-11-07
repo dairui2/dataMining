@@ -5,11 +5,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # 读取数据源文件
-with open('/Users/dai/Downloads/玩转Python网络爬虫作者.txt', 'r', encoding='utf8', errors='ignores') as f:
+with open('./电商客服对话日志.txt', 'r', encoding='utf8', errors='ignores') as f:
     txt = f.read()
 
 # 读取停用词文件
-with open('/Users/dai/Downloads/stopword.txt', 'r', encoding='utf8', errors='ignores') as f:
+with open('./stopword.txt', 'r', encoding='utf8', errors='ignores') as f:
 
     # 读取停用词到一个列表中
     stopwordlist = f.readlines()
@@ -20,11 +20,19 @@ with open('/Users/dai/Downloads/stopword.txt', 'r', encoding='utf8', errors='ign
 
     # 将列表对象转为集合对象
     stopword_set = set(stopwordlist)
-    # print(stopword_set)
 
+#添加自定义的词
+jieba.add_word('iPhone 13')
+
+# 分词处理
 words = jieba.cut(txt)  #精确模式
+seg_list = [i for i in words]
 
-custom_mask = np.array(Image.open('/Users/dai/Pictures/apple.jpg'))
+# 将分词结果转化为字符串
+seg_text = ' '.join(seg_list)
+print(seg_text)
+
+custom_mask = np.array(Image.open('./apple.jpeg'))
 
 # wc = WordCloud(font_path='/System/Library/Fonts/SFNSMono.ttf', width=800, height=600, mode ='RGBA', background_color='white')  # 创建WordCloud对象
 wc = WordCloud(font_path='/System/Library/Fonts/STHeiti Light.ttc', #支持中文的字体
@@ -33,7 +41,7 @@ wc = WordCloud(font_path='/System/Library/Fonts/STHeiti Light.ttc', #支持中�
                 mask = custom_mask,
                background_color='white')  # 创建WordCloud对象
 
-wc.generate(txt)    # 由文本生成词云，但此时并没有生成图片文件
+wc.generate(seg_text)    # 由文本生成词云，但此时并没有生成图片文件
 
 wc.to_file('/Users/dai/Downloads/001.png')     # 保存词云到文件中
 

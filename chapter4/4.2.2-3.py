@@ -3,12 +3,12 @@ import matplotlib.pyplot as plt
 from PIL import Image
 import numpy as np
 
-with open('/Users/dai/Downloads/玩转Python网络爬虫作者.txt', 'r', encoding='utf8', errors='ignores') as f:
+with open('./电商客服对话日志.txt', 'r', encoding='utf8', errors='ignores') as f:
 
 # with open('/Users/dai/Downloads/stopword.txt', 'r', encoding='utf8', errors='ignores') as f:
     txt = f.read()
 
-custom_mask = np.array(Image.open('/Users/dai/Pictures/apple.jpg'))
+custom_mask = np.array(Image.open('./apple.jpeg'))
 
 # wc = WordCloud(font_path='/System/Library/Fonts/SFNSMono.ttf', mode ='RGBA', background_color='white')  # 创建WordCloud对象
 wc = WordCloud(font_path='/System/Library/Fonts/STHeiti Light.ttc', mode ='RGBA',mask = custom_mask, background_color='white')  # 创建WordCloud对象
