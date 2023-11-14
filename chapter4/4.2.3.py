@@ -42,7 +42,7 @@ custom_mask = np.array(Image.open('./apple.jpeg'))
 wc = WordCloud(font_path='/System/Library/Fonts/STHeiti Light.ttc', #支持中文的字体
                width=600, height=800, mode ='RGBA',
                stopwords=stopword_set, #过滤停用词
-                mask = custom_mask,
+                # mask = custom_mask,
                background_color='white')  # 创建WordCloud对象
 
 wc.generate(seg_text)    # 由文本生成词云，但此时并没有生成图片文件
