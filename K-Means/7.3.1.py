@@ -2,6 +2,8 @@ import pandas as pd
 # import matplotlib.pyplot as plt
 # from sklearn.cluster import KMeans
 # import scikit-learn
+from datetime import datetime
+from math import ceil
 
 # 3读入数据
 datafile = "./data/RFM聚类分析.xlsx"
@@ -94,6 +96,56 @@ age = pd.Series(data['age']).value_counts()
 # print(gender, age)
 
 # 8属性规约
+data_select = data[['user_id','last_pay_time','pay_num','pay_times']]
+print(data_select.head())
+#重命名列名
+data_select.columns = ['用户id','最后一次消费时间','消费金额','消费次数']
+print(data_select.head())
 
 # 9计算特征R, F, M
+# 生成起始日期和提数日的日期
+start_date = datetime(2016, 6, 1)
+exdata_date = datetime(2016, 7, 20)    #提数日的日期
+print(start_date,exdata_date)          #2016-06-01 00:00:00 2016-07-20 00:00:00     日期类型数据
+
+# 计算R
+# 转化为可计算的日期类型数据
+data_select = data_select.copy()
+data_select['最后一次消费时间'] = pd.to_datetime(data_select['最后一次消费时间'])
+# 计算R（最后一次消费距离提数日的时间）
+data_select = data_select.copy()
+data_select['R(最后一次消费距提数提数日的时间)'] = exdata_date - data_select['最后一次消费时间']
+
+# 计算F（月均消费次数）
+# 计算最后一次消费时间与起始日期的天数差
+period_day = data_select['最后一次消费时间'] - start_date
+# 创建空列表统计月数
+period_month = []
+# 遍历天数，向上取整生成月数
+for i in period_day:
+    period_month.append(ceil(i.days/30))
+# 第一次输出月数统计
+print(period_month)
+# 分割线
+print("#"*110)
+# 遍历清楚0值
+for i in range(0, len(period_month)):
+    if period_month[i] == 0:
+        period_month[i] =1
+# 第二次输出月数统计
+print(period_month)
+# 计算F（月均消费次数）
+data_select = data_select.copy()
+data_select['F(月均消费次数)'] = data_select['消费次数']/period_month
+
+# 计算M（月均消费金额）
+data_select = data_select.copy()
+data_select['M(月均消费金额)'] = data_select['消费金额']/period_month
+print(data_select)
+
 # 10保存预处理完成的数据
+# 去掉每个列标签字符串前后的空格
+data_select = data_select.rename(columns=lambda  x:x.strip())
+# 保存数据
+output_file_path = './data/某移动公司客户信息预处理.xlsx'
+data_select.to_excel(output_file_path, index=False)
