@@ -9,4 +9,3 @@
 5. 词云
 <img width="752" alt="image" src="https://github.com/dairui2/dataMining/assets/31460898/c9263ded-c3e3-435e-8a93-d1be5a3b263e">
 <img width="752" alt="image" src="https://github.com/dairui2/dataMining/assets/31460898/38c1ebcd-8d20-4818-bc35-b5e61aa4c435">
-
