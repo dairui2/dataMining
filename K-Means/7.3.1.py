@@ -1,7 +1,4 @@
 import pandas as pd
-# import matplotlib.pyplot as plt
-# from sklearn.cluster import KMeans#
-# import scikit-learn
 from datetime import datetime
 from math import ceil
 
