@@ -10,6 +10,8 @@
 <img width="1279" alt="image" src="https://github.com/dairui2/dataMining/assets/31460898/d5dd526d-ffe9-4e0d-ac3b-44abaa66be0d">
 
 
+
+
 客户价值分析
 1. 读入数据并进行数据预处理
 2. 数据标准化
