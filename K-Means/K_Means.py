@@ -25,9 +25,10 @@ plt.xlabel('k值')
 plt.ylabel('SEE')
 plt.title('肘部图')
 # plt.show()
+plt.savefig('./data/肘部图')
 
 # 2K-Means聚类分析
-kmodel = KMeans(n_clusters=4, max_iter=100, random_state=0)     #n_clusters初始化类时指定分类数；max_iter最大迭代次数；random_state指定质心初始化随机状态为0
+kmodel = KMeans(n_clusters=4, max_iter=100,n_init=10, random_state=0)     #n_clusters初始化类时指定分类数；max_iter最大迭代次数；random_state指定质心初始化随机状态为0
 kmodel.fit(z_cdata)
 
 # 3提取整合聚类结果
@@ -67,3 +68,5 @@ data1.to_excel(output_file_path, index=False)
 # 保存result
 output_file_path = './data/聚类结果统计.xlsx'
 result.to_excel(output_file_path, index=False)
+
+# del KM_data['用户id']
