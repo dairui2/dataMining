@@ -43,6 +43,7 @@ result.columns=['R', 'F', 'M'] + ['各类别人数']       #重命名表头
 print(result)
 
 # 4分析两种K值(3 or 4)结果
+
 # 5将类别与客户数据对应
 #连接kmodel.labels与z_cdata
 KM_data = pd.concat([z_cdata, pd.Series(kmodel.labels_, index=z_cdata.index)], axis=1)
@@ -57,7 +58,6 @@ print(data1.head())
 # 6保存聚类分析好的数据
 # 增加用户id列与列别标签相对应
 KM_data['用户id'] = KM_data.index
-
 # 保存KM_data
 output_file_path = './data/类别-客户信息(标准化数据)对应.xlsx'
 KM_data.to_excel(output_file_path, index=False)
