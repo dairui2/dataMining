@@ -6,7 +6,7 @@
 3. 生成停用词/excluded_flag = []
 4. 关键词提取/TF-IDF
 5. 词云
-<img width="1279" alt="image" src="https://github.com/dairui2/dataMining/assets/31460898/d5dd526d-ffe9-4e0d-ac3b-44abaa66be0d">
+   <img width="1279" alt="image" src="https://github.com/dairui2/dataMining/assets/31460898/d5dd526d-ffe9-4e0d-ac3b-44abaa66be0d">
 
 #
 客户价值分析
@@ -28,5 +28,5 @@
 
 #
 企业所得税预测分析
-<img width="813" alt="image" src="https://github.com/dairui2/dataMining/assets/31460898/96403738-d563-48ea-9585-6dc5be05294e">
+   <img width="813" alt="image" src="https://github.com/dairui2/dataMining/assets/31460898/96403738-d563-48ea-9585-6dc5be05294e">
 
