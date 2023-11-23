@@ -28,6 +28,6 @@
 
 #
 企业所得税预测分析
-![image](https://github.com/dairui2/dataMining/assets/31460898/d5d9d749-a982-401d-9494-2efd8231c223)
+<img width="808" alt="image" src="https://github.com/dairui2/dataMining/assets/31460898/5cf8c2db-4ba4-422d-8eb1-aa032c2c82ff">
 <img width="813" alt="image" src="https://github.com/dairui2/dataMining/assets/31460898/96403738-d563-48ea-9585-6dc5be05294e">
 
