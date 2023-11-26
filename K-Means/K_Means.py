@@ -24,7 +24,7 @@ plt.plot(x, SEE, 'o-')
 plt.xlabel('k值')
 plt.ylabel('SEE')
 plt.title('肘部图')
-# plt.show()
+plt.show()
 plt.savefig('./data/肘部图')
 
 # 2K-Means聚类分析
