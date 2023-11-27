@@ -12,7 +12,7 @@ plt.bar(gender.index, gender, width=0.5, color='c')
 plt.xticks(range(1,3),['男','女'])    #设置x轴刻度值对应range=[1, 2]
 plt.xlabel('性别', fontsize=12)
 plt.ylabel('人数', fontsize=12)
-plt.title('性别-人数统计图', fontsize=16)
+plt.title('性别-人数统计图', fontsize=14)
 # 保存图形
 plt.savefig('./data/性别-人数统计图',dpi=128)
 # 展示图形
@@ -31,9 +31,9 @@ plt.plot(age.index, age)
 plt.xticks(range(0,80,5), fontsize=12)
 plt.yticks(range(2,20), fontsize=12)
 plt.grid(ls=':',alpha=0.8)
-plt.xlabel('年龄', fontsize=14)
-plt.ylabel('人数', fontsize=14)
-plt.title('年龄-人数统计图', fontsize=20)
+plt.xlabel('年龄', fontsize=12)
+plt.ylabel('人数', fontsize=12)
+plt.title('年龄-人数统计图', fontsize=14)
 # 填充折线与x轴间的颜色，使结果更直观，颜色在x轴覆盖范围用age.index标识
 plt.fill_between(age.index, age, color='c', alpha=0.3)
 # 保存图形
@@ -53,8 +53,9 @@ plt.rcParams['font.sans-serif'] = 'Arial Unicode MS'
 # 绘制柱状图
 kmeans_analysis.plot(kind='bar', rot=0, yticks=range(-1,9))
 # 完善图表
-plt.title('聚类结果柱状图', fontsize=20)
-plt.xticks(range(0,4), ['第0类','第1类','第2类','第3类'])
+plt.title('聚类结果柱状图', fontsize=14)
+plt.xlabel('类别', fontsize=12)
+plt.xticks(range(0,4), ['第0类','第1类','第2类','第3类'], fontsize=12)
 plt.grid(axis='y',color='grey',linestyle='--',alpha=0.5)
 plt.ylabel('R,F,M 3个指标均值')
 
@@ -70,9 +71,9 @@ plt.rcParams['font.sans-serif'] = 'Arial Unicode MS'
 # 绘制柱状图
 result.plot(kind='bar', y='各类别人数', rot=0)    #使用DataFrame形变量自带的plot()函数来绘图，指定绘图类型为bar
 # 完善图表
-plt.xlabel('类别', fontsize=14)
-plt.ylabel('人数', fontsize=14)
-plt.title('聚类结果各类别人数统计图', fontsize=16)
+plt.xlabel('类别', fontsize=12)
+plt.ylabel('人数', fontsize=12)
+plt.title('聚类结果各类别人数统计图', fontsize=14)
 # 保存图形
 plt.savefig('./data/聚类结果各类别人数统计图',dpi=128)
 
@@ -88,7 +89,7 @@ fig = plt.figure(figsize=(10, 8))
 # 设置极坐标模式
 ax = fig.add_subplot(111, polar=True)
 # 存储特征标签
-feature =['R','F','M']
+feature =['R(最后一次消费距提数提数日的时间)','F(月均消费次数)','M(月均消费金额)']
 # 统计特征数
 N = len(feature)
 
@@ -103,7 +104,7 @@ for i, v in enumerate(center_num):
     ang = angles * 180/np.pi                                         #添加每个特征的标签
     ax.set_thetagrids(ang[:-1], feature)                             #添加每个特征的标签
 
-    plt.title('客户群特征分析图', fontsize=20)                          #添加标题
+    plt.title('客户群特征分析图', fontsize=14)                          #添加标题
     ax.grid()                                                        #添加网格线
     plt.legend(loc='upper right', bbox_to_anchor=(1.2, 1.0), shadow=True, fontsize=12)   #设置图例
     plt.savefig('./data/客户群特征分析图', dpi=128, bbox_inches='tight')                    #保存图形，指定bbox_inches来裁剪图形多余空白区域

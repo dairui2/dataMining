@@ -21,9 +21,9 @@ plt.rcParams['font.sans-serif'] = ['Songti SC']
 
 # 开始绘图
 plt.plot(x, SEE, 'o-')
-plt.xlabel('k值')
-plt.ylabel('SEE')
-plt.title('肘部图')
+plt.xlabel('k值', fontsize=12)
+plt.ylabel('SEE', fontsize=12)
+plt.title('肘部图', fontsize=14)
 plt.show()
 plt.savefig('./data/肘部图')
 
