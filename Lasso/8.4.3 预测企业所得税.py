@@ -100,7 +100,7 @@ scatter = (
     # 标题
     .set_global_opts(
         title_opts=opts.TitleOpts(title='真实值与预测值对比'),
-        yaxis_opts=opts.AxisOpts(name='企业所得税（万元）',
+        yaxis_opts=opts.AxisOpts(name='销售金额（万元）',
                                  name_location='middle',
                                  name_gap=70),
         xaxis_opts=opts.AxisOpts(name='年份',

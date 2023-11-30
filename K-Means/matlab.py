@@ -89,7 +89,7 @@ fig = plt.figure(figsize=(10, 8))
 # 设置极坐标模式
 ax = fig.add_subplot(111, polar=True)
 # 存储特征标签
-feature =['R(最后一次消费距提数提数日的时间)','F(月均消费次数)','M(月均消费金额)']
+feature =['R(最后一次消费距提数日的时间)','F(月均消费次数)','M(月均消费金额)']
 # 统计特征数
 N = len(feature)
 
