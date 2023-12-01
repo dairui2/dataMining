@@ -1,6 +1,6 @@
-文本数据挖掘(分词，词云)；客户价值分析(K-Means聚类)；Lasso回归预测分析(SVR)
+NLP/TF-IDF(客服对话分析)；K-Means聚类(客户价值分析,广告效果分析)；Lasso回归预测分析(SVR销售预测分析)
 
-文本数据挖掘
+客服对话分析
 1. 分词
 2. 添加自定义词典/jieba.add_word()
 3. 生成停用词/excluded_flag = []
@@ -9,7 +9,7 @@
    <img width="1279" alt="image" src="https://github.com/dairui2/dataMining/assets/31460898/d5dd526d-ffe9-4e0d-ac3b-44abaa66be0d">
 
 #
-客户价值分析
+客户价值分析，广告效果分析
 1. 读入数据并进行数据预处理
 2. 数据标准化
    2.1 读入数据
@@ -24,9 +24,9 @@
    3.6 保存聚类分析好的数据
 5. 数据可视化及数据分析
    <img width="1279" alt="截屏2023-11-22 04 59 20" src="https://github.com/dairui2/dataMining/assets/31460898/390d7f5a-ff67-4fb7-8506-318aadca4d96">
-   <img width="1279" alt="截屏2023-11-22 05 03 31" src="https://github.com/dairui2/dataMining/assets/31460898/30741095-c878-4869-98df-ef5b463c652c">
+   <img width="969" alt="image" src="https://github.com/dairui2/dataMining/assets/31460898/2bfee6d0-f5c3-4644-aa73-17b84f870335">
 
 #
-企业所得税预测分析
-   <img width="1279" alt="image" src="https://github.com/dairui2/dataMining/assets/31460898/96403738-d563-48ea-9585-6dc5be05294e">
+销售预测分析
+   <img width="810" alt="image" src="https://github.com/dairui2/dataMining/assets/31460898/31bc58df-d148-4f7f-a9a2-271f71a45daa">
 
