@@ -119,12 +119,18 @@ labels = np.concatenate((labels,[labels[0]]))   # 新版本增加，对labels进
 for i in range(len(num_sets)):  # 循环每个类别
     data_tmp = num_sets_max_min[i, :]  # 获得对应类数据
     data = np.concatenate((data_tmp, [data_tmp[0]]))  # 建立相同首尾字段以便于闭合
-    ax.plot(angles, data, 'o-', c=cor_list[i], label=i)  # 画线
+    legend_label = '第{}类'.format(i)  # Concatenate legend label
+    ax.plot(angles, data, 'o-', c=cor_list[i], label=legend_label)  # 画线
 
 # part4 设置图像显示格式
-ax.set_thetagrids(angles * 180 / np.pi, labels, fontproperties="Arial Unicode MS")  # 设置极坐标轴
-ax.set_title("广告各聚类类别显著特征图", fontproperties="Arial Unicode MS")  # 设置标题放置
+# ax.tick_params(axis='x', labelsize=10)  # 设置极坐标值的字体大小
+ax.set_thetagrids(angles * 180 / np.pi, labels, fontproperties="Arial Unicode MS", fontsize=10)  # 设置极坐标轴
+ax.set_title("广告各聚类类别显著特征图",y=1.0, fontproperties="Arial Unicode MS", fontsize=12)  # y参数来调整标题的垂直位置
 ax.set_rlim(-0.2, 1.2)  # 设置坐标轴尺度范围
-plt.legend(loc=0)  # 设置图例位置
-plt.savefig('./广告各聚类类别显著特征图')
+
+# plt.legend(loc=0)  # 设置图例位置
+legend = plt.legend(loc='upper left', bbox_to_anchor=(-0.1, 1), shadow=True, prop={'family': 'Arial Unicode MS'})  # loc设置图例大概位置；bbox_to_anchor将图例的位置微调，第一个参数表示 x 轴上的偏移量，负值表示向左移动，调整此值可以将图例向左移动；shadow阴影边缘；prop指定图例字体
+for text in legend.get_texts():
+    text.set_fontsize(10)  # 设置图例字号大小
+plt.savefig('./广告各聚类类别显著特征图', dpi=128, bbox_inches='tight')                                    #保存图形，指定bbox_inches来裁剪图形多余空白区域
 plt.show()

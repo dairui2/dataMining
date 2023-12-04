@@ -102,11 +102,15 @@ for i, v in enumerate(center_num):
     ax.fill(angles, center, alpha=0.25)                              #填充颜色
 
     ang = angles * 180/np.pi                                         #添加每个特征的标签
-    ax.set_thetagrids(ang[:-1], feature)                             #添加每个特征的标签
+    ax.set_thetagrids(ang[:-1], feature, fontproperties="Arial Unicode MS", fontsize=12)                      #设置极坐标轴
 
-    plt.title('客户群特征分析图', fontsize=14)                          #添加标题
+    plt.title('客户群特征分析图',y=1.0, fontproperties="Arial Unicode MS", fontsize=14)                          #添加标题
     ax.grid()                                                        #添加网格线
-    plt.legend(loc='upper right', bbox_to_anchor=(1.2, 1.0), shadow=True, fontsize=12)   #设置图例
+    # plt.legend(loc='upper right', bbox_to_anchor=(1.1, 1.0), shadow=True, fontsize=12)   #设置图例
+    legend = plt.legend(loc='upper right', bbox_to_anchor=(1.1, 1.0), shadow=True, prop={
+        'family': 'Arial Unicode MS'})  # loc设置图例大概位置；bbox_to_anchor将图例的位置微调，第一个参数表示 x 轴上的偏移量，负值表示向左移动，调整此值可以将图例向左移动；shadow阴影边缘；prop指定图例字体
+    for text in legend.get_texts():
+        text.set_fontsize(10)  # 设置图例字号大小
     plt.savefig('./data/客户群特征分析图', dpi=128, bbox_inches='tight')                    #保存图形，指定bbox_inches来裁剪图形多余空白区域
 
 # 显示图形
