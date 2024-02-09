@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+    <div id="8b3be81a8cd54e42a73607c4199525c0" class="chart-container" style="width:900px; height:900px; "></div>
+    <script>
+        var chart_8b3be81a8cd54e42a73607c4199525c0 = echarts.init(
+            document.getElementById('8b3be81a8cd54e42a73607c4199525c0'), 'white', {renderer: 'canvas'});
+        var option_8b3be81a8cd54e42a73607c4199525c0 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "name": "\u5546\u54c1\u540d\u79f0",
+            "layout": "circular",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 8000,
+                "gravity": 0.2,
+                "edgeLength": 30,
+                "friction": 0.6,
+                "layoutAnimation": true
+            },
+            "label": {
+                "show": true,
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": false,
+            "focusNodeAdjacency": true,
+            "data": [
+                {
+                    "name": "whole milk",
+                    "symbolSize": 50.24,
+                    "value": 216
+                },
+                {
+                    "name": "other vegetables",
+                    "symbolSize": 47.39,
+                    "value": 167
+                },
+                {
+                    "name": "yogurt",
+                    "symbolSize": 30.84,
+                    "value": 53
+                },
+                {
+                    "name": "rolls/buns",
+                    "symbolSize": 28.88,
+                    "value": 453
+                },
+                {
+                    "name": "root vegetables",
+                    "symbolSize": 21.64,
+                    "value": 144
+                },
+                {
+                    "name": "soda",
+                    "symbolSize": 17.87,
+                    "value": 57
+                },
+                {
+                    "name": "tropical fruit",
+                    "symbolSize": 17.64,
+                    "value": 24
+                },
+                {
+                    "name": "bottled water",
+                    "symbolSize": 14.57,
+                    "value": 52
+                },
+                {
+                    "name": "citrus fruit",
+                    "symbolSize": 13.76,
+                    "value": 25
+                },
+                {
+                    "name": "whipped/sour cream",
+                    "symbolSize": 12.21,
+                    "value": 223
+                }
+            ],
+            "edgeLabel": {
+                "show": false,
+                "margin": 8
+            },
+            "edgeSymbol": [
+                null,
+                null
+            ],
+            "edgeSymbolSize": 10,
+            "links": [
+                {
+                    "source": "root vegetables",
+                    "target": "whipped/sour cream",
+                    "value": 42
+                },
+                {
+                    "source": "whipped/sour cream",
+                    "target": "root vegetables",
+                    "value": 42
+                },
+                {
+                    "source": "tropical fruit",
+                    "target": "citrus fruit",
+                    "value": 46
+                },
+                {
+                    "source": "citrus fruit",
+                    "target": "tropical fruit",
+                    "value": 46
+                },
+                {
+                    "source": "yogurt",
+                    "target": "root vegetables",
+                    "value": 72
+                },
+                {
+                    "source": "root vegetables",
+                    "target": "yogurt",
+                    "value": 72
+                },
+                {
+                    "source": "other vegetables",
+                    "target": "root vegetables",
+                    "value": 100
+                },
+                {
+                    "source": "root vegetables",
+                    "target": "other vegetables",
+                    "value": 100
+                },
+                {
+                    "source": "whipped/sour cream",
+                    "target": "other vegetables",
+                    "value": 68
+                },
+                {
+                    "source": "other vegetables",
+                    "target": "whipped/sour cream",
+                    "value": 68
+                },
+                {
+                    "source": "root vegetables",
+                    "target": "tropical fruit",
+                    "value": 49
+                },
+                {
+                    "source": "tropical fruit",
+                    "target": "root vegetables",
+                    "value": 49
+                },
+                {
+                    "source": "yogurt",
+                    "target": "tropical fruit",
+                    "value": 61
+                },
+                {
+                    "source": "tropical fruit",
+                    "target": "yogurt",
+                    "value": 61
+                },
+                {
+                    "source": "whipped/sour cream",
+                    "target": "citrus fruit",
+                    "value": 32
+                },
+                {
+                    "source": "citrus fruit",
+                    "target": "whipped/sour cream",
+                    "value": 32
+                },
+                {
+                    "source": "whipped/sour cream",
+                    "target": "whole milk",
+                    "value": 83
+                },
+                {
+                    "source": "whole milk",
+                    "target": "whipped/sour cream",
+                    "value": 83
+                },
+                {
+                    "source": "tropical fruit",
+                    "target": "other vegetables",
+                    "value": 81
+                },
+                {
+                    "source": "other vegetables",
+                    "target": "tropical fruit",
+                    "value": 81
+                },
+                {
+                    "source": "whipped/sour cream",
+                    "target": "yogurt",
+                    "value": 44
+                },
+                {
+                    "source": "yogurt",
+                    "target": "whipped/sour cream",
+                    "value": 44
+                },
+                {
+                    "source": "citrus fruit",
+                    "target": "other vegetables",
+                    "value": 71
+                },
+                {
+                    "source": "other vegetables",
+                    "target": "citrus fruit",
+                    "value": 71
+                },
+                {
+                    "source": "yogurt",
+                    "target": "other vegetables",
+                    "value": 104
+                },
+                {
+                    "source": "other vegetables",
+                    "target": "yogurt",
+                    "value": 104
+                },
+                {
+                    "source": "whipped/sour cream",
+                    "target": "tropical fruit",
+                    "value": 31
+                },
+                {
+                    "source": "tropical fruit",
+                    "target": "whipped/sour cream",
+                    "value": 31
+                },
+                {
+                    "source": "yogurt",
+                    "target": "citrus fruit",
+                    "value": 50
+                },
+                {
+                    "source": "citrus fruit",
+                    "target": "yogurt",
+                    "value": 50
+                },
+                {
+                    "source": "whole milk",
+                    "target": "root vegetables",
+                    "value": 107
+                },
+                {
+                    "source": "root vegetables",
+                    "target": "whole milk",
+                    "value": 107
+                },
+                {
+                    "source": "root vegetables",
+                    "target": "citrus fruit",
+                    "value": 39
+                },
+                {
+                    "source": "citrus fruit",
+                    "target": "root vegetables",
+                    "value": 39
+                },
+                {
+                    "source": "citrus fruit",
+                    "target": "bottled water",
+                    "value": 43
+                },
+                {
+                    "source": "bottled water",
+                    "target": "citrus fruit",
+                    "value": 43
+                },
+                {
+                    "source": "whole milk",
+                    "target": "tropical fruit",
+                    "value": 96
+                },
+                {
+                    "source": "tropical fruit",
+                    "target": "whole milk",
+                    "value": 96
+                },
+                {
+                    "source": "bottled water",
+                    "target": "yogurt",
+                    "value": 61
+                },
+                {
+                    "source": "yogurt",
+                    "target": "bottled water",
+                    "value": 61
+                },
+                {
+                    "source": "whole milk",
+                    "target": "yogurt",
+                    "value": 126
+                },
+                {
+                    "source": "yogurt",
+                    "target": "whole milk",
+                    "value": 126
+                },
+                {
+                    "source": "bottled water",
+                    "target": "tropical fruit",
+                    "value": 44
+                },
+                {
+                    "source": "tropical fruit",
+                    "target": "bottled water",
+                    "value": 44
+                },
+                {
+                    "source": "whole milk",
+                    "target": "other vegetables",
+                    "value": 162
+                },
+                {
+                    "source": "other vegetables",
+                    "target": "whole milk",
+                    "value": 162
+                },
+                {
+                    "source": "whole milk",
+                    "target": "citrus fruit",
+                    "value": 78
+                },
+                {
+                    "source": "citrus fruit",
+                    "target": "whole milk",
+                    "value": 78
+                },
+                {
+                    "source": "soda",
+                    "target": "bottled water",
+                    "value": 69
+                },
+                {
+                    "source": "bottled water",
+                    "target": "soda",
+                    "value": 69
+                },
+                {
+                    "source": "bottled water",
+                    "target": "root vegetables",
+                    "value": 41
+                },
+                {
+                    "source": "root vegetables",
+                    "target": "bottled water",
+                    "value": 41
+                },
+                {
+                    "source": "rolls/buns",
+                    "target": "citrus fruit",
+                    "value": 56
+                },
+                {
+                    "source": "citrus fruit",
+                    "target": "rolls/buns",
+                    "value": 56
+                },
+                {
+                    "source": "rolls/buns",
+                    "target": "tropical fruit",
+                    "value": 59
+                },
+                {
+                    "source": "tropical fruit",
+                    "target": "rolls/buns",
+                    "value": 59
+                },
+                {
+                    "source": "soda",
+                    "target": "rolls/buns",
+                    "value": 98
+                },
+                {
+                    "source": "rolls/buns",
+                    "target": "soda",
+                    "value": 98
+                },
+                {
+                    "source": "whole milk",
+                    "target": "bottled water",
+                    "value": 88
+                },
+                {
+                    "source": "bottled water",
+                    "target": "whole milk",
+                    "value": 88
+                },
+                {
+                    "source": "bottled water",
+                    "target": "other vegetables",
+                    "value": 65
+                },
+                {
+                    "source": "other vegetables",
+                    "target": "bottled water",
+                    "value": 65
+                },
+                {
+                    "source": "whole milk",
+                    "target": "rolls/buns",
+                    "value": 136
+                },
+                {
+                    "source": "rolls/buns",
+                    "target": "whole milk",
+                    "value": 136
+                },
+                {
+                    "source": "soda",
+                    "target": "yogurt",
+                    "value": 64
+                },
+                {
+                    "source": "yogurt",
+                    "target": "soda",
+                    "value": 64
+                },
+                {
+                    "source": "yogurt",
+                    "target": "rolls/buns",
+                    "value": 72
+                },
+                {
+                    "source": "rolls/buns",
+                    "target": "yogurt",
+                    "value": 72
+                },
+                {
+                    "source": "bottled water",
+                    "target": "rolls/buns",
+                    "value": 64
+                },
+                {
+                    "source": "rolls/buns",
+                    "target": "bottled water",
+                    "value": 64
+                },
+                {
+                    "source": "other vegetables",
+                    "target": "rolls/buns",
+                    "value": 98
+                },
+                {
+                    "source": "rolls/buns",
+                    "target": "other vegetables",
+                    "value": 98
+                },
+                {
+                    "source": "root vegetables",
+                    "target": "rolls/buns",
+                    "value": 55
+                },
+                {
+                    "source": "rolls/buns",
+                    "target": "root vegetables",
+                    "value": 55
+                },
+                {
+                    "source": "soda",
+                    "target": "other vegetables",
+                    "value": 82
+                },
+                {
+                    "source": "other vegetables",
+                    "target": "soda",
+                    "value": 82
+                }
+            ]
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "title": [
+        {
+            "show": true,
+            "text": "\u5546\u54c1\u5173\u7cfb\u7ed3\u679c\u56fe",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ]
+};
+        chart_8b3be81a8cd54e42a73607c4199525c0.setOption(option_8b3be81a8cd54e42a73607c4199525c0);
+    </script>
+</body>
+</html>
