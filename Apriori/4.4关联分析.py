@@ -72,6 +72,6 @@ from pyecharts import options as opts  # 导入opts模块
 graph = (
     Graph(init_opts=opts.InitOpts(width="900px", height="900px"))
     .add("商品名称", nodes, edges, repulsion=8000, layout='circular', linestyle_opts=opts.LineStyleOpts(width=2), label_opts=opts.LabelOpts(is_show=True))
-    .set_global_opts(title_opts=opts.TitleOpts(title="商品关系结果图"))
+    .set_global_opts(title_opts=opts.TitleOpts(title="商品捆绑/关联图"))
 )
 graph.render('association_analysis.html')
