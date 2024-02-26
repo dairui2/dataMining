@@ -29,4 +29,5 @@ Lasso回归 销售预测分析
 
 
 Apriori关联(商品捆绑销售)
+
 <img width="589" alt="image" src="https://github.com/dairui2/dataMining/assets/31460898/58c459ef-ac89-4e20-a70d-348e178ea0ea">
