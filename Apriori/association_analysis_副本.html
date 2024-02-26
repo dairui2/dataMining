@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+    <div id="4c5d3a3e75eb4a828f0c0ce04c95d8a4" class="chart-container" style="width:900px; height:900px; "></div>
+    <script>
+        var chart_4c5d3a3e75eb4a828f0c0ce04c95d8a4 = echarts.init(
+            document.getElementById('4c5d3a3e75eb4a828f0c0ce04c95d8a4'), 'white', {renderer: 'canvas'});
+        var option_4c5d3a3e75eb4a828f0c0ce04c95d8a4 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "name": "\u5546\u54c1\u540d\u79f0",
+            "layout": "circular",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 8000,
+                "gravity": 0.2,
+                "edgeLength": 30,
+                "friction": 0.6,
+                "layoutAnimation": true
+            },
+            "label": {
+                "show": true,
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": false,
+            "focusNodeAdjacency": true,
+            "data": [
+                {
+                    "name": "全脂牛奶",
+                    "symbolSize": 50.24,
+                    "value": 216
+                },
+                {
+                    "name": "其他蔬菜",
+                    "symbolSize": 47.39,
+                    "value": 167
+                },
+                {
+                    "name": "酸奶",
+                    "symbolSize": 30.84,
+                    "value": 53
+                },
+                {
+                    "name": "蛋卷/面包",
+                    "symbolSize": 28.88,
+                    "value": 453
+                },
+                {
+                    "name": "根菜类蔬菜",
+                    "symbolSize": 21.64,
+                    "value": 144
+                },
+                {
+                    "name": "苏打水",
+                    "symbolSize": 17.87,
+                    "value": 57
+                },
+                {
+                    "name": "热带水果",
+                    "symbolSize": 17.64,
+                    "value": 24
+                },
+                {
+                    "name": "瓶装水",
+                    "symbolSize": 14.57,
+                    "value": 52
+                },
+                {
+                    "name": "柑橘类水果",
+                    "symbolSize": 13.76,
+                    "value": 25
+                },
+                {
+                    "name": "生/酸奶酪",
+                    "symbolSize": 12.21,
+                    "value": 223
+                }
+            ],
+            "edgeLabel": {
+                "show": false,
+                "margin": 8
+            },
+            "edgeSymbol": [
+                null,
+                null
+            ],
+            "edgeSymbolSize": 10,
+            "links": [
+                {
+                    "source": "根菜类蔬菜",
+                    "target": "生/酸奶酪",
+                    "value": 42
+                },
+                {
+                    "source": "生/酸奶酪",
+                    "target": "根菜类蔬菜",
+                    "value": 42
+                },
+                {
+                    "source": "柑橘类水果",
+                    "target": "热带水果",
+                    "value": 46
+                },
+                {
+                    "source": "热带水果",
+                    "target": "柑橘类水果",
+                    "value": 46
+                },
+                {
+                    "source": "根菜类蔬菜",
+                    "target": "酸奶",
+                    "value": 72
+                },
+                {
+                    "source": "酸奶",
+                    "target": "根菜类蔬菜",
+                    "value": 72
+                },
+                {
+                    "source": "根菜类蔬菜",
+                    "target": "其他蔬菜",
+                    "value": 100
+                },
+                {
+                    "source": "其他蔬菜",
+                    "target": "根菜类蔬菜",
+                    "value": 100
+                },
+                {
+                    "source": "生/酸奶酪",
+                    "target": "其他蔬菜",
+                    "value": 68
+                },
+                {
+                    "source": "其他蔬菜",
+                    "target": "生/酸奶酪",
+                    "value": 68
+                },
+                {
+                    "source": "热带水果",
+                    "target": "根菜类蔬菜",
+                    "value": 49
+                },
+                {
+                    "source": "根菜类蔬菜",
+                    "target": "热带水果",
+                    "value": 49
+                },
+                {
+                    "source": "酸奶",
+                    "target": "热带水果",
+                    "value": 61
+                },
+                {
+                    "source": "生/酸奶酪",
+                    "target": "柑橘类水果",
+                    "value": 32
+                },
+                {
+                    "source": "柑橘类水果",
+                    "target": "生/酸奶酪",
+                    "value": 32
+                },
+                {
+                    "source": "热带水果",
+                    "target": "酸奶",
+                    "value": 61
+                },
+                {
+                    "source": "生/酸奶酪",
+                    "target": "全脂牛奶",
+                    "value": 83
+                },
+                {
+                    "source": "全脂牛奶",
+                    "target": "生/酸奶酪",
+                    "value": 83
+                },
+                {
+                    "source": "其他蔬菜",
+                    "target": "热带水果",
+                    "value": 81
+                },
+                {
+                    "source": "热带水果",
+                    "target": "其他蔬菜",
+                    "value": 81
+                },
+                {
+                    "source": "生/酸奶酪",
+                    "target": "酸奶",
+                    "value": 44
+                },
+                {
+                    "source": "酸奶",
+                    "target": "生/酸奶酪",
+                    "value": 44
+                },
+                {
+                    "source": "其他蔬菜",
+                    "target": "柑橘类水果",
+                    "value": 71
+                },
+                {
+                    "source": "柑橘类水果",
+                    "target": "其他蔬菜",
+                    "value": 71
+                },
+                {
+                    "source": "酸奶",
+                    "target": "其他蔬菜",
+                    "value": 104
+                },
+                {
+                    "source": "其他蔬菜",
+                    "target": "酸奶",
+                    "value": 104
+                },
+                {
+                    "source": "热带水果",
+                    "target": "生/酸奶酪",
+                    "value": 31
+                },
+                {
+                    "source": "生/酸奶酪",
+                    "target": "热带水果",
+                    "value": 31
+                },
+                {
+                    "source": "酸奶",
+                    "target": "柑橘类水果",
+                    "value": 50
+                },
+                {
+                    "source": "柑橘类水果",
+                    "target": "酸奶",
+                    "value": 50
+                },
+                {
+                    "source": "全脂牛奶",
+                    "target": "根菜类蔬菜",
+                    "value": 107
+                },
+                {
+                    "source": "根菜类蔬菜",
+                    "target": "全脂牛奶",
+                    "value": 107
+                },
+                {
+                    "source": "根菜类蔬菜",
+                    "target": "柑橘类水果",
+                    "value": 39
+                },
+                {
+                    "source": "柑橘类水果",
+                    "target": "根菜类蔬菜",
+                    "value": 39
+                },
+                {
+                    "source": "柑橘类水果",
+                    "target": "瓶装水",
+                    "value": 43
+                },
+                {
+                    "source": "瓶装水",
+                    "target": "柑橘类水果",
+                    "value": 43
+                },
+                {
+                    "source": "全脂牛奶",
+                    "target": "热带水果",
+                    "value": 96
+                },
+                {
+                    "source": "热带水果",
+                    "target": "全脂牛奶",
+                    "value": 96
+                },
+                {
+                    "source": "酸奶",
+                    "target": "瓶装水",
+                    "value": 61
+                },
+                {
+                    "source": "瓶装水",
+                    "target": "酸奶",
+                    "value": 61
+                },
+                {
+                    "source": "全脂牛奶",
+                    "target": "酸奶",
+                    "value": 126
+                },
+                {
+                    "source": "酸奶",
+                    "target": "全脂牛奶",
+                    "value": 126
+                },
+                {
+                    "source": "瓶装水",
+                    "target": "热带水果",
+                    "value": 44
+                },
+                {
+                    "source": "热带水果",
+                    "target": "瓶装水",
+                    "value": 44
+                },
+                {
+                    "source": "全脂牛奶",
+                    "target": "其他蔬菜",
+                    "value": 162
+                },
+                {
+                    "source": "其他蔬菜",
+                    "target": "全脂牛奶",
+                    "value": 162
+                },
+                {
+                    "source": "全脂牛奶",
+                    "target": "柑橘类水果",
+                    "value": 78
+                },
+                {
+                    "source": "柑橘类水果",
+                    "target": "全脂牛奶",
+                    "value": 78
+                },
+                {
+                    "source": "瓶装水",
+                    "target": "苏打水",
+                    "value": 69
+                },
+                {
+                    "source": "苏打水",
+                    "target": "瓶装水",
+                    "value": 69
+                },
+                {
+                    "source": "瓶装水",
+                    "target": "根菜类蔬菜",
+                    "value": 41
+                },
+                {
+                    "source": "根菜类蔬菜",
+                    "target": "瓶装水",
+                    "value": 41
+                },
+                {
+                    "source": "蛋卷/面包",
+                    "target": "柑橘类水果",
+                    "value": 56
+                },
+                {
+                    "source": "柑橘类水果",
+                    "target": "蛋卷/面包",
+                    "value": 56
+                },
+                {
+                    "source": "蛋卷/面包",
+                    "target": "热带水果",
+                    "value": 59
+                },
+                {
+                    "source": "热带水果",
+                    "target": "蛋卷/面包",
+                    "value": 59
+                },
+                {
+                    "source": "蛋卷/面包",
+                    "target": "苏打水",
+                    "value": 98
+                },
+                {
+                    "source": "苏打水",
+                    "target": "蛋卷/面包",
+                    "value": 98
+                },
+                {
+                    "source": "全脂牛奶",
+                    "target": "瓶装水",
+                    "value": 88
+                },
+                {
+                    "source": "瓶装水",
+                    "target": "全脂牛奶",
+                    "value": 88
+                },
+                {
+                    "source": "瓶装水",
+                    "target": "其他蔬菜",
+                    "value": 65
+                },
+                {
+                    "source": "其他蔬菜",
+                    "target": "瓶装水",
+                    "value": 65
+                },
+                {
+                    "source": "全脂牛奶",
+                    "target": "蛋卷/面包",
+                    "value": 136
+                },
+                {
+                    "source": "蛋卷/面包",
+                    "target": "全脂牛奶",
+                    "value": 136
+                },
+                {
+                    "source": "酸奶",
+                    "target": "苏打水",
+                    "value": 64
+                },
+                {
+                    "source": "苏打水",
+                    "target": "酸奶",
+                    "value": 64
+                },
+                {
+                    "source": "酸奶",
+                    "target": "蛋卷/面包",
+                    "value": 72
+                },
+                {
+                    "source": "蛋卷/面包",
+                    "target": "酸奶",
+                    "value": 72
+                },
+                {
+                    "source": "瓶装水",
+                    "target": "蛋卷/面包",
+                    "value": 64
+                },
+                {
+                    "source": "蛋卷/面包",
+                    "target": "瓶装水",
+                    "value": 64
+                },
+                {
+                    "source": "蛋卷/面包",
+                    "target": "其他蔬菜",
+                    "value": 98
+                },
+                {
+                    "source": "其他蔬菜",
+                    "target": "蛋卷/面包",
+                    "value": 98
+                },
+                {
+                    "source": "根菜类蔬菜",
+                    "target": "蛋卷/面包",
+                    "value": 55
+                },
+                {
+                    "source": "蛋卷/面包",
+                    "target": "根菜类蔬菜",
+                    "value": 55
+                },
+                {
+                    "source": "其他蔬菜",
+                    "target": "苏打水",
+                    "value": 82
+                },
+                {
+                    "source": "苏打水",
+                    "target": "其他蔬菜",
+                    "value": 82
+                }
+            ]
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "title": [
+        {
+            "show": true,
+            "text": "\u5546\u54c1\u7ec4\u5408/\u5173\u8054\u56fe",
+            "x": "center",
+            "y": "150px",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ]
+};
+        chart_4c5d3a3e75eb4a828f0c0ce04c95d8a4.setOption(option_4c5d3a3e75eb4a828f0c0ce04c95d8a4);
+    </script>
+</body>
+</html>
