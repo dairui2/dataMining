@@ -1,4 +1,4 @@
-NLP/TF-IDF(客服对话分析)；K-Means聚类(客户价值分析,广告效果分析)；Lasso回归(SVR销售预测分析)
+NLP/TF-IDF(客服对话分析)；K-Means聚类(客户价值分析,广告效果分析)；Lasso回归(SVR销售预测分析)；Apriori关联(商品组合分析)
 
 NLP/TF-IDF 客服对话分析
 1. 对语料进行分词处理
