@@ -27,3 +27,7 @@ K-Means聚类 客户价值分析，广告效果分析
 Lasso回归 销售预测分析
    <img width="810" alt="image" src="https://github.com/dairui2/dataMining/assets/31460898/31bc58df-d148-4f7f-a9a2-271f71a45daa">
 
+
+Apriori关联(商品组合分析)
+![image](https://github.com/dairui2/dataMining/assets/31460898/2583cacb-8305-4888-a211-ff41b2d2956d)
+
