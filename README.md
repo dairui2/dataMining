@@ -28,6 +28,5 @@ Lasso回归 销售预测分析
    <img width="810" alt="image" src="https://github.com/dairui2/dataMining/assets/31460898/31bc58df-d148-4f7f-a9a2-271f71a45daa">
 
 
-Apriori关联(商品组合分析)
-![image](https://github.com/dairui2/dataMining/assets/31460898/2583cacb-8305-4888-a211-ff41b2d2956d)
-
+Apriori关联(商品捆绑销售)
+<img width="589" alt="image" src="https://github.com/dairui2/dataMining/assets/31460898/58c459ef-ac89-4e20-a70d-348e178ea0ea">
