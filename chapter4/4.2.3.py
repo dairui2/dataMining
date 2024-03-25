@@ -38,8 +38,8 @@ print(seg_text)
 
 custom_mask = np.array(Image.open('./apple.jpeg'))
 
-# wc = WordCloud(font_path='/System/Library/Fonts/SFNSMono.ttf', width=800, height=600, mode ='RGBA', background_color='white')  # 创建WordCloud对象
-wc = WordCloud(font_path='/System/Library/Fonts/STHeiti Light.ttc', #支持中文的字体
+# wc = WordCloud(font_path='/System/Library/Fonts/SFNSMono.ttf', width=600, height=600, mode ='RGBA', background_color='white')  # 创建WordCloud对象
+wc = WordCloud( font_path='/System/Library/Fonts/STHeiti Light.ttc', #支持中文的字体
                width=600, height=800, mode ='RGBA',
                stopwords=stopword_set, #过滤停用词
                 # mask = custom_mask,
