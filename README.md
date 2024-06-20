@@ -23,7 +23,8 @@ K-Means聚类 客户价值分析，广告效果分析
    3.5 将类别与客户数据对应
    3.6 保存聚类分析好的数据
 5. 数据可视化及数据分析
-   <img width="799" alt="image" src="https://github.com/dairui2/dataMining/assets/31460898/624e053c-da76-48c9-b181-48bf96a770e8">
+   ![image](https://github.com/dairui2/dataMining/assets/31460898/be3fd83c-ff5c-44e6-b5bd-4ab32abc855d)
+
 
 
 Lasso回归 销售预测分析
