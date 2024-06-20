@@ -23,7 +23,8 @@ K-Means聚类 客户价值分析，广告效果分析
    3.5 将类别与客户数据对应
    3.6 保存聚类分析好的数据
 5. 数据可视化及数据分析
-   ![image](https://github.com/dairui2/dataMining/assets/31460898/be3fd83c-ff5c-44e6-b5bd-4ab32abc855d)
+   <img width="1279" alt="image" src="https://github.com/dairui2/dataMining/assets/31460898/3ec0a513-77a4-4e87-9f5d-ffeb1b331b65">
+
 
 
 
