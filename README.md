@@ -54,6 +54,7 @@ Apriori关联(商品组合分析 套餐SKU, CF协同过滤推荐)
 
 
 IsolationForest异常检测(网站广告流量的异常识别与检测)
+1. 应用场景：异常订单识别，黄牛识别，风险预警，欺诈检测
 <img width="973" alt="image" src="https://github.com/user-attachments/assets/534b8e14-0dca-41c2-86d9-9c58dea168f0">
 
 
