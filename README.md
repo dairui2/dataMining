@@ -39,7 +39,7 @@ Lasso回归 销售预测分析
 
 
 
-Apriori关联(商品组合分析)
+Apriori关联(商品组合分析 套餐SKU, CF协同过滤推荐)
 
 1. 应用场景：购物篮分析(捆绑销售、商品陈列设计、页面促销设计、推荐系统等)，通过分析用户同时购买了哪些商品来分析用户购物习惯。
 2. 频繁规则：关联结果中 支持度Support = P((A,B)|ALL) = P(B&A)/P(ALL) 和 置信度Confidence = P(B|A) = P(B&A)/P(A)都比较高的规则。
@@ -49,4 +49,11 @@ Apriori关联(商品组合分析)
    4.2 当提升度大于1时，说明应用关联规则比不应用关联规则产生更好的结果；
    4.3 当提升度小于1时，说明关联规则具有负相关(互斥)的作用，该规则是无效规则。
 
-   <img width="589" alt="image" src="https://github.com/dairui2/dataMining/assets/31460898/58c459ef-ac89-4e20-a70d-348e178ea0ea">
+![image](https://github.com/user-attachments/assets/5e3e0c4a-e8c9-4416-a568-ede1f02427f1)
+
+
+
+IsolationForest异常检测(网站广告流量的异常识别与检测)
+<img width="973" alt="image" src="https://github.com/user-attachments/assets/534b8e14-0dca-41c2-86d9-9c58dea168f0">
+
+
